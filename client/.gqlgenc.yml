@@ -1,0 +1,15 @@
+model:
+  package: generated
+  filename: ./model/models_gen.go
+client:
+  package: generated
+  filename: ./generated/client.go
+models:
+  Int:
+    model: github.com/99designs/gqlgen/graphql.Int64
+schema:
+  - "../graph/schema/*.graphqls"
+query:
+  - "./query/*.graphql"
+generate:
+  clientInterfaceName: "GraphQLClient" 
